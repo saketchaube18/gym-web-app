@@ -1,0 +1,244 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Gallery
+{% endblock title %}
+
+{% block head %}
+
+<h1>Gallery</h1>
+
+<div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+  <div class="col-xl-4 col-md-12">
+    <div class="icon-box">
+      <i class="ri-fire-fill"></i>
+      <h3><a href="">Weight Training</a></h3>
+    </div>
+  </div>
+  <div class="col-xl-4 col-md-8">
+    <div class="icon-box">
+      <i class="ri-blaze-fill"></i>
+      <h3><a href="">Cardio</a></h3>
+    </div>
+  </div>
+  <div class="col-xl-4 col-md-8">
+    <div class="icon-box">
+      <i class="ri-blaze-fill"></i>
+      <h3><a href="">Crossfit</a></h3>
+    </div>
+  </div>
+  <div class="col-xl-4 col-md-8">
+    <div class="icon-box">
+      <i class="ri-meteor-fill"></i>
+      <h3><a href="">Steam Room</a></h3>
+    </div>
+  </div>
+
+  {% endblock head %}
+
+  {% block body %}
+
+  <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2 style="color: black;">Portfolio</h2>
+        <p>Our gym for you</p>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-Weight">Weight Training</li>
+            <li data-filter=".filter-cardio">Cardio</li>
+            <li data-filter=".filter-crossfit">Crossfit</li>
+            <li data-filter=".filter-steam">Steam Room</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Weight">
+          <div class="portfolio-wrap">
+            <img src="static/img/weight1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Weight Training 1</h4>
+              <p>Weight Training</p>
+              <div class="portfolio-links">
+                <a href="static/img/weight1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Weight Training Section"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Weight">
+          <div class="portfolio-wrap">
+            <img src="static/img/weight2.webp" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Weight Training 2</h4>
+              <p>Weight Training</p>
+              <div class="portfolio-links">
+                <a href="static/img/weight2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Weight Training Section"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-Weight">
+          <div class="portfolio-wrap">
+            <img src="static/img/weight3.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Weight Training 3</h4>
+              <p>Weight Training</p>
+              <div class="portfolio-links">
+                <a href="static/img/weight3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Weight Training Section"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-cardio">
+          <div class="portfolio-wrap">
+            <img src="static/img/cardio1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Cardio 1</h4>
+              <p>Cardio</p>
+              <div class="portfolio-links">
+                <a href="static/img/cardio1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Cardio Section"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-cardio">
+          <div class="portfolio-wrap">
+            <img src="static/img/cardio2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Cardio 2</h4>
+              <p>Cardio</p>
+              <div class="portfolio-links">
+                <a href="static/img/cardio2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Cardio Section"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-cardio">
+          <div class="portfolio-wrap">
+            <img src="static/img/cardio3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Cardio 3</h4>
+              <p>Cardio</p>
+              <div class="portfolio-links">
+                <a href="static/img/cardio3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Cardio Section"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-crossfit">
+          <div class="portfolio-wrap">
+            <img src="static/img/crossfit1.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Crossfit 1</h4>
+              <p>Crossfit</p>
+              <div class="portfolio-links">
+                <a href="static/img/crossfit1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Crossfit Section"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-crossfit">
+          <div class="portfolio-wrap">
+            <img src="static/img/crossfit2.webp" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Crossfit 2</h4>
+              <p>Crossfit</p>
+              <div class="portfolio-links">
+                <a href="static/img/crossfit2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Crossfit Section"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-crossfit">
+          <div class="portfolio-wrap">
+            <img src="static/img/crossfit3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Crossfit 3</h4>
+              <p>Crossfit</p>
+              <div class="portfolio-links">
+                <a href="static/img/crossfit3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Crossfit Section"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-steam">
+          <div class="portfolio-wrap">
+            <img src="static/img/steam1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Steam Room 1</h4>
+              <p>Steam Room</p>
+              <div class="portfolio-links">
+                <a href="static/img/steam2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Steam Room"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-steam">
+          <div class="portfolio-wrap">
+            <img src="static/img/steam2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Steam Room2</h4>
+              <p>Steam Room</p>
+              <div class="portfolio-links">
+                <a href="static/img/steam2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Steam Room"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-steam">
+          <div class="portfolio-wrap">
+            <img src="static/img/steam3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Steam Room 3</h4>
+              <p>Steam Room</p>
+              <div class="portfolio-links">
+                <a href="static/img/steam3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Steam Room"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  {% endblock body %}

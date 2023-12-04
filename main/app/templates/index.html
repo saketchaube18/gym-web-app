@@ -1,0 +1,360 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SC FITNESS CENTER</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <link href="static/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="/">SC FITNESS CENTER<span>.</span></a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/about">About</a></li>
+          <li><a class="nav-link scrollto" href="/services">Services</a></li>
+          <li><a class="nav-link scrollto" href="/gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="/team">Team</a></li>
+          <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="/join">Enrollment</a></li>
+
+
+          {% if not request.user.is_authenticated %}
+
+          <li><a class="nav-link scrollto" href="/log-in">Login</a></li>
+          {% else %}
+          <li><a class="nav-link scrollto" href="/logout">Logout</a></li>
+
+          {% endif %}
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <a href="/" class="get-started-btn scrollto">WELCOME</a>
+
+    </div>
+  </header>
+
+
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>The only bad workout is the one that didn't happen.<span>.</span></h1>
+        </div>
+      </div>
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-fire-fill"></i>
+            <h3><a href="">BACK</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-blaze-fill"></i>
+            <h3><a href="">CHEST</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-meteor-fill"></i>
+            <h3><a href="">Shoulders</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-flashlight-fill"></i>
+            <h3><a href="">ARMS</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-shining-fill"></i>
+            <h3><a href="">Legs</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="static/img/about1.jpg" class="img-fluid" alt="" style="height:auto; width:1000px;">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Six different travellers destined to cross path and bang , they created 'SC FITNESS CENTER'.</h3><br>
+            <br>
+            <br>
+            <p class="fst-italic">
+              Six different individual from six different professions , masters in their own realm came together and
+              gave the world one stop solution 'SC FITNESS CENTER' .
+            </p><br>
+            <br>
+            <br>
+            <ul>
+              <li><i class="ri-check-double-line"></i> FITNESS TEST EXPERT : PARAG THOKE.</li>
+              <li><i class="ri-check-double-line"></i> CROSSFIT TRAINER : GAURAV THOKE.</li>
+              <li><i class="ri-check-double-line"></i> MASTER DIETICIAN : PREET MHATRE.</li>
+              <li><i class="ri-check-double-line"></i> EQUIPEMENT SCIENTIST : SMIT RAUT.</li>
+              <li><i class="ri-check-double-line"></i> MASTER TRAINER : ABHAY ODEDRA.</li>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p> Workout is not just some activity you do to be fit but its a lifestyle that you adapt and grow into , So
+            don't waste time and join SC FITNESS CENTER.</p>
+          <a class="cta-btn" href="/contact">Call To Action</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+            data-aos="fade-right" data-aos-delay="100"></div>
+          <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left"
+            data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Gym Statistics</h3>
+              <p>Number of members changes every year , Every year gym has 10 events , All these years gym has only one
+                management.
+
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="9000" data-purecounter-duration="2"
+                      class="purecounter"></span>
+                    <p><strong>Happy Clients</strong></p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2"
+                      class="purecounter"></span>
+                    <p><strong>Events every year</strong>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="4"
+                      class="purecounter"></span>
+                    <p><strong>Years of experience</strong></p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="4"
+                      class="purecounter"></span>
+                    <p><strong>Trusted Management </strong></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Approach Us</p>
+        </div>
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60189.39671909275!2d72.7368088598334!3d19.462580596520397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aa49b828c6a5%3A0xbefe4c41a14ad251!2sVirar%20West%2C%20Virar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1699403258362!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Ideal Park , Virar-West - 401303</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>chaube4444@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9325898406</p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>SC FITNESS CENTER<span>.</span></h3>
+              <p>
+                Virar-West<br>
+                Mumbai - 401303<br><br>
+                <strong>Phone:</strong> +91 9325898406<br>
+                <strong>Email:</strong> SCfitnesscenter@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/gallery">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/services">Personal Training</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/services">Fitness Test Expert</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/services">Master Dietician</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/services">Equipment Scientist</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/services">Events and Competition</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Working Hours</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"><b>Monday - Saturday:</b></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">6:00 am - 11:00 pm</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"><b>Sunday:</b></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">9:00 am - 8:00 pm</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"><b>Trial workout available</b></a></li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>SC FITNESS CENTER</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
